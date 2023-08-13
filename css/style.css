@@ -1,0 +1,285 @@
+@font-face {
+    font-family: book-oldman;
+    src: url(../font/BOOKOS.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+#wrapper {
+    width: 100%;
+    max-width: 1440px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+
+/* !!!!!!TOP SECTION!!!!!! */
+
+.top{
+    background: url(../IMG/bg/top-bg.jpg);
+    background-repeat: no-repeat;
+    display: relative;
+    min-height: 1062px;
+}
+
+.menu{
+    padding-left: 40px;
+    display: relative;
+}
+
+.menu  *{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#menu-intro{
+    display: absolute;
+    float: left;
+    top: -100px;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+#menu-about-me{
+    display: absolute;
+    float: left;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+
+#menu-about-me{
+    z-index: 5;
+    padding-left: 50px;
+}
+
+#menu-works{
+    margin-right: -160px;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+
+#menu-contacts{
+    float: right;
+    padding-right: 60px;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+
+
+
+.menu a:hover{
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 7px #d1d1d1);
+
+}
+
+/* !!!!!!INTRO SECTION!!!!!! */
+@keyframes slideright {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+#intro{
+    background: url(../IMG/bg/intro-bg.jpg);
+    background-repeat: no-repeat;
+    min-height: 737px;
+}
+
+#intro h2{
+    font-family: book-oldman;
+    font-size: 48px;
+    color: #927964;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#intro-text{
+    display: relative;
+    position: relative;
+    text-align: center;
+    color: #806651;
+    z-index: 5;
+    padding-top: 15px;
+    line-height: 35px;
+    animation-name: slideright;
+    animation-duration: 5s;
+}
+
+#intro-text::before{
+    position: absolute;
+    content: url(../IMG/intro-before.png);
+    z-index: -3;
+    width: 100%;
+    height: 65%;
+    left: 0;
+    top: -60px;
+    animation-name: slideright;
+    animation-duration: 1s;
+}
+
+#intro-text h3{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#intro-text p{
+    padding-top: 60px;
+    font-size: 24px;
+}
+
+/* !!!!!!TOP SECTION!!!!!! */
+
+@keyframes slideleft {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+#about-me{
+    background: url(../IMG/bg/about-me-bg.jpg);
+    min-height: 997px;
+    background-repeat: no-repeat;
+}
+
+#about-me-subtitle{
+    padding-top: 50px;
+    padding-left: 125px;
+    animation-name: slideleft;
+    animation-duration: 3s;
+}
+
+#about-me-text{
+    display: relative;
+    position: relative;
+    float: right;
+    text-align: center;
+    color: #806651;
+    z-index: 5;
+    line-height: 35px;
+    animation-name: abmeslideleft;
+    animation-duration: 3s;
+    font-family: book-oldman;
+    padding-top: 300px;
+    padding-right: 1100px;
+    line-height: 50px;
+    clear: both;
+}
+
+#about-me-text h2{
+    font-size: 48px;
+    color: #806651;
+    padding-left: 250px;
+    margin-right: -1000px;
+    margin-top: -40px;
+}
+
+#about-me-text h3{
+    font-size: 35px;
+    color: #806651;
+    padding-top: 30px;
+    padding-left: 600px;
+    margin-right: -1000px;
+    text-align: left;
+}
+
+#about-me-text p{
+    font-size: 24px;
+    color: #806651;
+    z-index: 6;
+    padding-top: 40px;
+    padding-left: 600px;
+    margin-right: -1000px;
+    text-align: left;
+    line-height: 30px;
+}
+
+#about-me-text::before{
+    position: absolute;
+    content: url(../IMG/about-me-bg.png);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 140px;
+    top: 50px;
+}
+
+#propic{
+    position: absolute;
+    z-index: 5;
+    padding-left: 180px;
+    margin-top: 230px;
+    float: left;
+    animation-name: abmeslideleft;
+    animation-duration: 3s;
+}
+
+@keyframes abmeslideleft {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+/* !!!!!!WORKS SECTION!!!!!! */
+#works{
+    background: url(../IMG/bg/works-bg.jpg);
+    min-height: 2544px;
+    background-repeat: no-repeat;
+}
+
+#works-subtitle{
+    padding-top:100px;
+    padding-left: 0px;
+    animation-name: slideright;
+    animation-duration: 3s;
+}
+
+#works h2{
+    font-family: book-oldman;
+    font-size: 48px;
+    color: #927964;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* !!!!!!BOTTOM SECTION!!!!!! */
+#contact{
+    background: url(../IMG/bg/contacts-bg.jpg);
+    min-height: 660px;
+    background-repeat: no-repeat;
+}
