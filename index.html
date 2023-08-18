@@ -175,7 +175,16 @@
     // Hide preloader and show content
     preloader.style.display = 'none';
     content.style.display = 'block';
+
+    startAnimations(slidedown);
     });
+
+    function startAnimations(slidedown) {
+    // Put your animation code here
+    // For example, you can use CSS classes to add animations to specific elements
+    const animatedElement = document.querySelector('.animated-element');
+    animatedElement.classList.add('slidedown'); // Assuming you have a fade-in animation
+    }
     </script>
 </body>
 
