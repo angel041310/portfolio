@@ -23,7 +23,7 @@
     background: url(../IMG/bg/top-bg.jpg);
     background-repeat: no-repeat;
     display: relative;
-    min-height: 1062px;
+    min-height: 587px;
 }
 
 .menu{
@@ -52,3 +52,93 @@
     animation-name: slidedown;
     animation-duration: 2s;
 }
+
+.top p{
+    font-family: book-oldman;
+    font-size: 26px;
+    color: #806651;
+    z-index: 6;
+    text-align: right;
+    line-height: 40px;
+    margin-top: -200px;
+    margin-right: 100px;
+    animation-name: slideleft;
+    animation-duration: 3s;
+}
+
+@keyframes slideleft {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+/* !!!!!!CREATIVE WORKS SECTION!!!!!! */
+@keyframes slideleft {
+    from {
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.creative-works-section{
+    background: url(../IMG/bg/creative-works-bg.jpg);
+    background-repeat: no-repeat;
+    display: relative;
+    min-height: 3046px;
+}
+
+#creative-works-subtitle{
+    padding-top:130px;
+    padding-left: 130px;
+    animation-name: slideleft;
+    animation-duration: 4s;
+}
+
+/* !!!!!!CREATIVE WORKS SECTION!!!!!! */
+
+.internship-projects-section{
+    background: url(../IMG/bg/internship-projects-bg.jpg);
+    background-repeat: no-repeat;
+    display: relative;
+    min-height: 2367px;
+}
+
+#internship-projects-subtitle{
+    padding-top:130px;
+    padding-left: 130px;
+    animation-name: slideleft;
+    animation-duration: 4s;
+}
+
+/* !!!!!!H2!!!!!! */
+h2{
+    font-family: book-oldman;
+    font-size: 48px;
+    color: #a58a73;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 130px;
+    animation-name: slideright;
+    animation-duration: 4s;
+}
+
+@keyframes slideright {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
