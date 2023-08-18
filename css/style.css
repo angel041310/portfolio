@@ -16,33 +16,7 @@
     background-color: white;
     margin: 0 auto;
 }
-/* !!!!!!PRELOADER SECTION!!!!!! */
 
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../IMG/preloader/preloader-bg.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.bar {
-    width: 0;
-    height: 5px;
-    background-color: #3498db;
-    animation: progress 5s ease-in-out infinite;
-}
-
-@keyframes progress {
-    0% { width: 0; }
-    100% { width: 100%; }
-}
 
 /* !!!!!!TOP SECTION!!!!!! */
 
