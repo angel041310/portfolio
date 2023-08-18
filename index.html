@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div class="preloader">
+        <div class="bar"></div>
+    </div>
+
+    <div class="wrapper">
         <div class="top">
             <div class="menu">
                 <div id="menu-intro">
@@ -68,65 +72,50 @@
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><a target="_blank" href="IMG/works/hobi-traditional.png" target="_blank"><img src="IMG/works/hobi-traditional.png" width="666px"></a>
-                            <p>Manual (Traditional Drawing)</p>
-                            </div>
+                            <div class="swiper-slide"><a target="_blank" href="IMG/works/hobi-traditional.png" target="_blank"><img src="IMG/works/hobi-traditional.png" width="666px"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/works/tanjiro-traditional.png" target="_blank"><img src="IMG/works/tanjiro-traditional.png" width="666px"></a>
-                            <p></p>
-                            </div>
+                            <div class="swiper-slide"><a target="_blank" href="IMG/works/tanjiro-traditional.png" target="_blank"><img src="IMG/works/tanjiro-traditional.png" width="666px"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/works/digital-1.png" target="_blank"><img src="IMG/works/digital-1.png" width="666px"></a>
-                            <p></p></div>
+                            <div class="swiper-slide"><a target="_blank" href="IMG/works/digital-1.png" target="_blank"><img src="IMG/works/digital-1.png" width="666px"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/works/yeji-traditional.png" target="_blank"><img src="IMG/works/yeji-traditional.png" width="666px"></a>
-                            <p></p></div>
+                            <div class="swiper-slide"><a target="_blank" href="IMG/works/yeji-traditional.png" target="_blank"><img src="IMG/works/yeji-traditional.png" width="666px"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/works/yoongi-traditional.png" target="_blank"><img src="IMG/works/yoongi-traditional.png" width="666px"></a>
-                            <p></p></div>
+                            <div class="swiper-slide"><a target="_blank" href="IMG/works/yoongi-traditional.png" target="_blank"><img src="IMG/works/yoongi-traditional.png" width="666px"></a></div>
                         </div>
 
                         <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>  
+                        <div class="swiper-button-next"></div> 
                         </div>
                     </div>
+                    <div class="btn-padding"><button class="btn"><span>See More</span></button></div>
                 </div>
 
                 <div class="internship-projects">
                     <h2>Internship Projects</h2>
                     <div class="container">
-                        <div class="swiper-bg">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
+                        <div class="swiper-2">
+                        <div class="swiper mySwiper-2">
+                            <div class="swiper-wrapper-2">
                             <!-- Slides -->
-                            <div class="swiper-slide"><a target="_blank" href="IMG/2-img/01_ファミリー.jpg" target="_blank"><img src="IMG/2-img/01_ファミリー.jpg"></a>
-                            <p>Manual (Traditional Drawing)</p>
-                            </div>
+                            <div class="swiper-slide-2"><a target="_blank" href="IMG/2-img/01_ファミリー.jpg" target="_blank"><img src="IMG/works/internship/banner1.jpg"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/2-img/02_ファミリー.jpg" target="_blank"><img src="IMG/2-img/02_ファミリー.png"></a>
-                            <p></p>
-                            </div>
+                            <div class="swiper-slide-2"><a target="_blank" href="IMG/2-img/02_ファミリー.jpg" target="_blank"><img src="IMG/works/internship/banner2.jpg"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/2-img/03_ファミリー.jpg" target="_blank"><img src="IMG/2-img/03_ファミリー.jpg"></a>
-                            <p></p></div>
+                            <div class="swiper-slide-2"><a target="_blank" href="IMG/2-img/03_ファミリー.jpg" target="_blank"><img src="IMG/works/internship/banner3.jpg"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/2-img/04_ファミリー.jpg" target="_blank"><img src="IMG/2-img/04_ファミリー.jpg"></a>
-                            <p></p></div>
+                            <div class="swiper-slide-2"><a target="_blank" href="IMG/2-img/04_ファミリー.jpg" target="_blank"><img src="IMG/works/internship/banner4.jpg"></a></div>
 
-                            <div class="swiper-slide"><a target="_blank" href="IMG/2-img/05_ファミリー.jpg" target="_blank"><img src="IMG/2-img/05_ファミリー.jpg"></a>
-                            <p></p></div>
+                            <div class="swiper-slide-2"><a target="_blank" href="IMG/2-img/05_ファミリー.jpg" target="_blank"><img src="IMG/2-img/05_ファミリー.jpg"></a></div>
                         </div>
 
                         <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>  
                         </div>
                     </div>
+                    <p>Note: Desain di atas merupakan hasil desain yang dibuat sebagai latihan selama program internship di Ozora Publishing Co. Ltd.</p>
+                    <div class="btn-padding"><button class="btn"><span>See More</span></button></div>
                 </div>
             </div>
         </div>
@@ -161,12 +150,32 @@
       });
     </script>
 
+<script>
+    var swiper = new Swiper(".mySwiper-2", {
+      cssMode: true,
+      autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+    });
+  </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1500);
+    window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.wrapper');
+
+    // Hide preloader and show content
+    preloader.style.display = 'none';
+    content.style.display = 'block';
+    });
     </script>
 </body>
 
