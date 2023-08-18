@@ -1,0 +1,54 @@
+@font-face {
+    font-family: book-oldman;
+    src: url(../font/BOOKOS.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* !!!!!!TOP SECTION!!!!!! */
+
+.top{
+    background: url(../IMG/bg/top-bg.jpg);
+    background-repeat: no-repeat;
+    display: relative;
+    min-height: 1062px;
+}
+
+.menu{
+    padding-left: 40px;
+    display: relative;
+}
+
+.menu  *{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+      }
+    
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+  }
+
+#menu-works{
+    margin-left: 120px;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
