@@ -94,21 +94,21 @@
                 <div class="internship-projects">
                     <h2>Internship Projects</h2>
                     <div class="container">
-                        <div class="swiper-2">
-                        <div class="swiper mySwiper-2">
-                            <div class="swiper-wrapper-2">
+                        <div class="swiper">
+                        <div class="swiper-2 mySwiper2">
+                            <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide-2"><img src="IMG/works/internship/banner1.jpg"></div>
-                            <div class="swiper-slide-2"><img src="IMG/works/internship/banner2.jpg"></div>
-                            <div class="swiper-slide-2"><img src="IMG/works/internship/banner3.jpg"></div>
-                            <div class="swiper-slide-2"><img src="IMG/works/internship/banner4.jpg"></div>
+                            <div class="swiper-slide"><img src="IMG/works/internship/banner1.jpg"></div>
+                            <div class="swiper-slide"><img src="IMG/works/internship/banner2.jpg"></div>
+                            <div class="swiper-slide"><img src="IMG/works/internship/banner3.jpg"></div>
+                            <div class="swiper-slide"><img src="IMG/works/internship/banner4.jpg"></div>
                         </div>
-
+          
                         <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                         </div>
-                    </div>
+                      </div>
                     <p>Note: Desain di atas merupakan hasil desain yang dibuat sebagai latihan selama program internship di Ozora Publishing Co. Ltd.</p>
                     <div class="btn-padding">
                         <a href="https://angel041310.github.io/portfolio/complete-works"><button class="btn"><span>See More</span></button></a>
@@ -162,34 +162,24 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
       });
     </script>
 
 <script>
-    var swiper = new Swiper(".mySwiper-2", {
-        cssMode: true,
-        autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        },
+    var swiper = new Swiper(".mySwiper2", {
+      cssMode: true,
+      autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
-  </script>
+</script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
 </body>
 
 </html>
