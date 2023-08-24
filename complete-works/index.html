@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Another Works</title>
     <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
     <div class="wrapper">
         <div class="top">
+          <a href="https://angel041310.github.io/portfolio/"><img id="home" src="IMG/home.png"></a>
             <div id="menu-works">
                 <a href=#works><img src="IMG/works-menu.png"></a>
             </div>
@@ -21,15 +24,123 @@
         <div class="creative-works-section">
             <img id="creative-works-subtitle" src="IMG/creative-works-subtitle.png">
             <h2 id="traditional-h2">Traditional Artworks</h2>
-            <h2 id="himja-h2">My works while being part of a student organization</h2>
-            
+            <div class="gallery-personal">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="IMG/works/yoongi-traditional.png" class="gallery__img" alt="Image 1">
+                  </figure>
+                  <figure class="gallery__item gallery__item--2">
+                    <img src="IMG/works/yeji-traditional.png" class="gallery__img" alt="Image 2">
+                  </figure>
+                  <figure class="gallery__item gallery__item--3">
+                    <img src="IMG/works/tanjiro-traditional.png" class="gallery__img" alt="Image 3">
+                  </figure>
+                  <figure class="gallery__item gallery__item--4">
+                    <img src="IMG/works/hobi-traditional.png" class="gallery__img" alt="Image 4">
+                  </figure>
+                  <figure class="gallery__item gallery__item--5">
+                    <img src="IMG/works/deku-traditional.jpg" class="gallery__img" alt="Image 5">
+                  </figure>
+                  <figure class="gallery__item gallery__item--6">
+                    <img src="IMG/works/mika-traditional.jpg" class="gallery__img" alt="Image 6">
+                  </figure>
+                  <figure class="gallery__item gallery__item--7">
+                    <img src="IMG/works/taehyung-traditional.jpg" class="gallery__img" alt="Image 7">
+                  </figure>
+                  <figure class="gallery__item gallery__item--8">
+                    <img src="IMG/works/rengoku-traditional.jpg" class="gallery__img" alt="Image 8">
+                  </figure>
+                  <figure class="gallery__item gallery__item--9">
+                    <img src="IMG/works/shinah-traditional.jpg" class="gallery__img" alt="Image 9">
+                  </figure>
+                  <figure class="gallery__item gallery__item--10">
+                    <img src="IMG/works/shenshen-traditional.jpg" class="gallery__img" alt="Image 10">
+                  </figure>
+            </div>
+            <h2 id="organization-h2">Some of my works while being part of a student organization</h2>
+
+            <div class="gallery-organization">
+                <figure class="organization__item organization__item--1">
+                    <img src="IMG/works/himja/子供の日.png" class="gallery__img" alt="Image 1">
+                  </figure>
+                  <figure class="organization__item organization__item--2">
+                    <img src="IMG/works/himja/Japcom-Banner.png" class="gallery__img" alt="Image 2">
+                  </figure>
+                  <figure class="organization__item organization__item--3">
+                    <img src="IMG/works/himja/Respect for the Aged Day.png" class="gallery__img" alt="Image 3">
+                  </figure>
+                  <figure class="organization__item organization__item--4">
+                    <img src="IMG/works/himja/2.png" class="gallery__img" alt="Image 4">
+                  </figure>
+                  <figure class="organization__item organization__item--5">
+                    <img src="IMG/works/himja/digital-1.png" class="gallery__img" alt="Image 5">
+                  </figure>
+                  <figure class="organization__item organization__item--6">
+                    <img src="img/works/himja/Nyepi 2022.png" class="gallery__img" alt="Image 6">
+                  </figure>
+            </div>
         </div>
 
         <div class="internship-projects-section">
             <img id="internship-projects-subtitle" src="IMG/internship-subtitle.png">
             <h2 id="internship-h2">The projects I completed while interning at Ozora Publishing</h2>
+            <h3 id="banner-design">Banner Design</h3>
+            <div class="container">
+              <div class="swiper">
+              <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="IMG/works/internship/banner1.jpg"></div>
+                  <div class="swiper-slide"><img src="IMG/works/internship/banner2.jpg"></div>
+                  <div class="swiper-slide"><img src="IMG/works/internship/banner3.jpg"></div>
+                  <div class="swiper-slide"><img src="IMG/works/internship/banner4.jpg"></div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              </div>
+            </div>
+
+            <h3 id="web-design">Web Design</h3>
+            <div class="gallery-internship">
+                  <figure class="internship__item internship__item--1">
+                    <img src="img/works/internship/Ozora-Hotel-Desktop.jpg" class="gallery__img" alt="Image 6">
+                  </figure>
+                  <figure class="internship__item internship__item--2">
+                    <img src="img/works/internship/Ozora-Resto-Landing-Page.jpg" class="gallery__img" alt="Image 6">
+                  </figure>
+            </div>
+
+            <div class="btn-padding" id="hotel-button">
+              <a href="https://angel041310.github.io/ozora-hotel/"><button class="btn"><span>Visit Website</span></button></a>
+            </div>
+            <div class="btn-padding" id="resto-button">
+              <a href="https://angel041310.github.io/ozora-resto/"><button class="btn"><span>Visit Website</span></button></a>
+            </div>
+
+            <p id="note">Note: Desain di atas merupakan hasil desain yang dibuat sebagai latihan selama program internship di Ozora Publishing Co. Ltd.</p>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+      });
+    </script>
 </body>
 
 </html>
