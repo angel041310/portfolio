@@ -419,13 +419,14 @@ h3{
         color: #806651;
         font-size: 24px;
         text-align: center;
-        padding-top: 180px;
+        padding-top: 40px;
         margin-left: 100px;
         margin-right: 100px;
         line-height: 40px;
-        position: relative;
-
+        padding-bottom: 40px;
+        clear: both;
   }
+  
 /* !!!!!!H2!!!!!! */
 h2{
     font-family: book-oldman;
@@ -522,11 +523,12 @@ h2{
 }
 
 #hotel-button{
-    position: absolute;
     margin-left: 240px;
+    float: left;
 }
 
 #resto-button{
-    position: absolute;
-    margin-left: 830px;
+    float: right;
+    margin-right: 240px;
+    margin-top: 0px;
 }
